@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/selectableItemBackgroundBorderless"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mNavIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:paddingStart="@dimen/padding_1"
+            android:paddingTop="@dimen/padding_2"
+            android:paddingEnd="@dimen/padding_1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tab_ic_today" />
+
+        <com.xingzhi.android.biz.widget.RedDotTips
+            android:id="@+id/mNavDotTips"
+            android:layout_width="@dimen/width_14"
+            android:layout_height="@dimen/height_14"
+            android:layout_gravity="top|center"
+            android:layout_marginStart="@dimen/margin_10"
+            android:lines="1"
+            android:visibility="gone"
+            app:rdtTextSize="@dimen/text_size_9"
+            tools:text="1"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/mNavTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center"
+        android:textColor="@color/tab_bar_text"
+        android:textSize="@dimen/text_size_10"
+        tools:text="今日" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Components</string>
+
+    <string name="main_tab_name_today">今日</string>
+    <string name="main_tab_name_customer">客户</string>
+    <string name="main_tab_name_email">邮件</string>
+    <string name="main_tab_name_office">办公</string>
+    <string name="main_tab_name_mine">我的</string>
+
+</resources>

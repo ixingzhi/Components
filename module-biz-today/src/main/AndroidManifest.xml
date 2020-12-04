@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xingzhi.android.biz.today">
+
+    <application>
+
+        <activity
+            android:name=".test.TestActivity"
+            android:label="@string/biz_today_label_test"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

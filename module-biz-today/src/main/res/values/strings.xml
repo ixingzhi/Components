@@ -1,0 +1,15 @@
+<resources>
+    <string name="biz_today_app_name">TodayComponent</string>
+
+    <!-- Actionbar Title -->
+    <string name="biz_today_label_today">今日</string>
+    <string name="biz_today_label_test">Test</string>
+
+    <!-- Xml CopyWriter -->
+    <string name="biz_today_text_city">城市</string>
+    <string name="biz_today_text_settings">跳转到「我的」组件 设置页面</string>
+    <string name="biz_today_text_email_switch">跳转到「邮件」组件</string>
+    <string name="biz_today_text_update_today_red_dot">更新「今日」组件红点提示</string>
+    <string name="biz_today_text_test">测试页面</string>
+
+</resources>

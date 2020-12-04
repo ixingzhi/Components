@@ -1,0 +1,11 @@
+<resources>
+    <string name="biz_customer_app_name">CustomerComponent</string>
+
+    <!-- Actionbar Title -->
+    <string name="biz_customer_label_customer">客户</string>
+    <string name="biz_customer_label_test">TEST</string>
+
+    <!-- Xml CopyWriter -->
+    <string name="biz_customer_text_test">TEST</string>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mTvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40"
+        android:gravity="center"
+        android:text="@string/biz_email_label_email"
+        android:textColor="@color/color_base_text1"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:id="@+id/mTvTest"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_46"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableEnd="@drawable/biz_ic_arrow_right_gray"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_16"
+        android:paddingEnd="@dimen/padding_16"
+        android:text="@string/biz_email_text_test"
+        android:textColor="@color/color_base_text1"
+        android:textSize="@dimen/text_size_15" />
+
+    <include layout="@layout/biz_layout_divider_line" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_48"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tools:context=".main.NavFragment">
+
+    <com.xingzhi.android.components.main.NavigationButton
+        android:id="@+id/mNavToday"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <com.xingzhi.android.components.main.NavigationButton
+        android:id="@+id/mNavCustomer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <com.xingzhi.android.components.main.NavigationButton
+        android:id="@+id/mNavEmail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"/>
+
+    <com.xingzhi.android.components.main.NavigationButton
+        android:id="@+id/mNavOffice"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <com.xingzhi.android.components.main.NavigationButton
+        android:id="@+id/mNavMine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+</LinearLayout>

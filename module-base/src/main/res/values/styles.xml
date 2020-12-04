@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_0b8_green</item>
+        <item name="colorPrimaryDark">@color/color_0b8_green</item>
+        <item name="colorAccent">@color/color_base_bg4</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/color_base_theme_bg</item>
+    </style>
+
+<!--    <style name="SplashTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--        <item name="android:windowFullscreen">true</item>-->
+<!--        &lt;!&ndash;不让windowBackground延申到navigation bar区域&ndash;&gt;-->
+<!--        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">false</item>-->
+<!--        <item name="android:windowBackground">@drawable/biz_layerlist_splash_page</item>-->
+<!--        &lt;!&ndash;刘海屏兼容&ndash;&gt;-->
+<!--        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="p">shortEdges</item>-->
+<!--    </style>-->
+
+</resources>

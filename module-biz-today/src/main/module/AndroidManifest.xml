@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xingzhi.android.biz.today">
+
+    <application
+        android:name=".module.ComponentsApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/biz_today_app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/BaseTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label">
+
+        <activity
+            android:name=".module.MainTodayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".test.TestActivity"
+            android:label="@string/biz_today_label_test"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

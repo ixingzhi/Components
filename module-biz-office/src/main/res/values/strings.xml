@@ -1,0 +1,10 @@
+<resources>
+    <string name="biz_office_app_name">OfficeComponent</string>
+
+    <!-- Actionbar Title -->
+    <string name="biz_office_label_office">办公</string>
+
+    <!-- Xml CopyWriter -->
+    <string name="biz_office_text_test">Test</string>
+
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="biz_email_app_name">EmailComponent</string>
+
+    <!-- Actionbar Title -->
+    <string name="biz_email_label_email">邮件</string>
+    <string name="biz_email_label_test">TEST</string>
+
+    <!-- Xml CopyWriter -->
+    <string name="biz_email_text_test">TEST</string>
+
+</resources>

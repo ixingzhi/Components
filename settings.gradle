@@ -1,0 +1,13 @@
+include ':module-biz-office-api'
+include ':module-biz-office'
+include ':module-biz-email-api'
+include ':module-biz-email'
+include ':module-biz-customer-api'
+include ':module-biz-customer'
+include ':module-biz-mine-api'
+include ':module-biz-mine'
+include ':module-biz-today-api'
+include ':module-biz-today'
+include ':module-base'
+include ':app'
+rootProject.name = "Components"

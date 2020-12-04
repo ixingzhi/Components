@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--标题栏自定义属性-->
+    <declare-styleable name="TitleBar">
+        <attr name="tbBackImage" format="reference" />
+        <attr name="tbBackText" format="string" />
+        <attr name="tbBackTextColor" format="color" />
+        <attr name="tbTitleText" format="string" />
+        <attr name="tbTitleTextColor" format="color" />
+        <attr name="tbMenuImage" format="reference" />
+        <attr name="tbMenuText" format="string" />
+        <attr name="tbMenuTextColor" format="color" />
+        <attr name="tbBackgroundColor" format="color" />
+        <attr name="tbDividerVisibility">
+            <enum name="visible" value="1" />
+            <enum name="gone" value="0" />
+        </attr>
+        <attr name="tbBackVisibility">
+            <enum name="visible" value="1" />
+            <enum name="gone" value="0" />
+        </attr>
+    </declare-styleable>
+
+    <!--红点显示-->
+    <declare-styleable name="RedDotTips">
+        <attr name="rdtTextSize" format="dimension" />
+    </declare-styleable>
+
+</resources>
