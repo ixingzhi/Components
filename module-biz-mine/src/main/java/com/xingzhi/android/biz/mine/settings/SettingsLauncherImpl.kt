@@ -18,4 +18,10 @@ class SettingsLauncherImpl : SettingsLauncher {
         context.startActivity(Intent(context, SettingsActivity::class.java))
     }
 
+    override fun startActivity(context: Context, flags: Int) {
+        val intent = Intent(context, SettingsActivity::class.java)
+        intent.flags = flags
+        context.startActivity(intent)
+    }
+
 }

@@ -75,5 +75,20 @@
 
     <include layout="@layout/biz_layout_divider_line" />
 
+    <TextView
+        android:id="@+id/mTvTodayDetails"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_46"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableEnd="@drawable/biz_ic_arrow_right_gray"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_16"
+        android:paddingEnd="@dimen/padding_16"
+        android:text="@string/biz_today_text_today_details"
+        android:textColor="@color/color_base_text1"
+        android:textSize="@dimen/text_size_15" />
+
+    <include layout="@layout/biz_layout_divider_line" />
+
 
 </LinearLayout>

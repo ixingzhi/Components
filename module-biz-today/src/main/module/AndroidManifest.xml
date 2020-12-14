@@ -17,10 +17,13 @@
             android:name=".module.MainTodayActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-
         <activity
             android:name=".test.TestActivity"
             android:label="@string/biz_today_label_test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".details.TodayDetailsActivity"
+            android:label="@string/biz_today_label_today_details"
             android:screenOrientation="portrait" />
 
     </application>

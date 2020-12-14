@@ -8,6 +8,7 @@ import com.xingzhi.android.biz.event.HomePageSwitchEvent
 import com.xingzhi.android.biz.mine.api.router.SettingsLauncher
 import com.xingzhi.android.biz.today.R
 import com.xingzhi.android.biz.today.api.event.UpdateMainTodayCountEvent
+import com.xingzhi.android.biz.today.details.TodayDetailsActivity
 import com.xingzhi.android.biz.today.test.TestActivity
 import com.xingzhi.android.biz.utils.EventBusUtils
 import com.xingzhi.android.router.Launcher
@@ -35,7 +36,8 @@ class TodayFragment : BizFragment() {
     override fun initEvent() {
         mTvSettings.setOnClickListener {
             if (Launcher.check()) {
-                Launcher.navigation(SettingsLauncher::class.java).startActivity(mContext)
+                Launcher.navigation(SettingsLauncher::class.java)
+                    .startActivity(mContext)
             }
         }
 
@@ -47,6 +49,8 @@ class TodayFragment : BizFragment() {
         }
 
         mTvTest.setOnClickListener { startActivity(Intent(mContext, TestActivity::class.java)) }
+
+        mTvTodayDetails.setOnClickListener { TodayDetailsActivity.createIntent(mContext, 0) }
     }
 
     override fun initData() {

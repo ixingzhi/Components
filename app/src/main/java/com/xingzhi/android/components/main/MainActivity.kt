@@ -2,6 +2,7 @@ package com.xingzhi.android.components.main
 
 import android.os.Bundle
 import com.xingzhi.android.base.android.BaseActivity
+import com.xingzhi.android.biz.push.PushInit
 import com.xingzhi.android.components.R
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -16,6 +17,9 @@ class MainActivity : BaseActivity(), NavFragment.OnTabSelectedListener {
 
         val mFragmentManager = supportFragmentManager
         (mNavBar as NavFragment).setup(mFragmentManager, mViewPager, this)
+
+        // push init
+        PushInit.with().init(this)
     }
 
     override fun onTabSelected(navigationButton: NavigationButton) {

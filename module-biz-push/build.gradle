@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
@@ -8,19 +8,11 @@ android {
     buildToolsVersion androidConfig.buildToolsVersion
 
     defaultConfig {
-        applicationId androidConfig.applicationId
         minSdkVersion androidConfig.minSdkVersion
         targetSdkVersion androidConfig.targetSdkVersion
         versionCode androidConfig.versionCode
         versionName androidConfig.versionName
-
-        javaCompileOptions {
-            annotationProcessorOptions {
-                arguments = [AROUTER_MODULE_NAME: project.getName()]
-                includeCompileClasspath = true
-            }
-        }
-
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -31,13 +23,16 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
     }
 
-    kotlinOptions {
-        jvmTarget = '1.8'
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
     }
+
+    resourcePrefix "biz_push_"
+
 }
 
 kapt {
@@ -49,16 +44,12 @@ kapt {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     kapt dependenciesConfig.alibabaArouterCompiler
+
     implementation project(':module-base')
 
-    if (!Boolean.valueOf(rootProject.ext.isModule)) {
-        implementation project(':module-biz-today')
-        implementation project(':module-biz-today-api')
-        implementation project(':module-biz-customer')
-        implementation project(':module-biz-email')
-        implementation project(':module-biz-office')
-        implementation project(':module-biz-mine')
-        implementation project(':module-biz-push')
-    }
+    implementation dependenciesConfig.huaweiPush
+    implementation files('libs/MiPush_SDK_Client_3_8_5.jar')
 
+    implementation project(':module-biz-today-api')
+    implementation project(':module-biz-mine-api')
 }

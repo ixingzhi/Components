@@ -15,4 +15,6 @@ interface SettingsLauncher : IProvider {
 
     fun startActivity(context: Context)
 
+    fun startActivity(context: Context, flags: Int)
+
 }

@@ -52,5 +52,6 @@ ext{
             "glide"                        : "com.github.bumptech.glide:glide:4.9.0",
             "pickerView"                   : "com.contrarywind:Android-PickerView:4.1.9",
             "toast"                        : "com.hjq:toast:8.8",
+            "huaweiPush"                   : "com.huawei.hms:push:5.0.2.300",
     ]
 }
