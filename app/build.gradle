@@ -23,10 +23,25 @@ android {
 
     }
 
+    signingConfigs {
+        config {
+            keyAlias 'Components'
+            keyPassword '123456'
+            storeFile file('../Components.jks')
+            storePassword '123456'
+        }
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            shrinkResources true
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
 

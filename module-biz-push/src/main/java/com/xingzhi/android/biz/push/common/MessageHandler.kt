@@ -41,6 +41,8 @@ object MessageHandler {
         if (isBackground) {
             launcherApp(context, shouldInit)
         }
+
+        // 分发消息​
         messageHandle(context, data!!)
     }
 

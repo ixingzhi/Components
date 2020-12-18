@@ -50,7 +50,9 @@ class TodayFragment : BizFragment() {
 
         mTvTest.setOnClickListener { startActivity(Intent(mContext, TestActivity::class.java)) }
 
-        mTvTodayDetails.setOnClickListener { TodayDetailsActivity.createIntent(mContext, 0) }
+        mTvTodayDetails.setOnClickListener {
+            startActivity(TodayDetailsActivity.createIntent(mContext, 0))
+        }
     }
 
     override fun initData() {
