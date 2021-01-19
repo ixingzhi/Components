@@ -8,7 +8,9 @@ import com.xingzhi.android.biz.event.HomePageSwitchEvent
 import com.xingzhi.android.biz.mine.api.router.SettingsLauncher
 import com.xingzhi.android.biz.today.R
 import com.xingzhi.android.biz.today.api.event.UpdateMainTodayCountEvent
+import com.xingzhi.android.biz.today.banner.activity.BannerListActivity
 import com.xingzhi.android.biz.today.details.TodayDetailsActivity
+import com.xingzhi.android.biz.today.login.activity.LoginActivity
 import com.xingzhi.android.biz.today.test.TestActivity
 import com.xingzhi.android.biz.utils.EventBusUtils
 import com.xingzhi.android.router.Launcher
@@ -52,6 +54,14 @@ class TodayFragment : BizFragment() {
 
         mTvTodayDetails.setOnClickListener {
             startActivity(TodayDetailsActivity.createIntent(mContext, 0))
+        }
+
+        mTvBannerList.setOnClickListener {
+            startActivity(Intent(mContext, BannerListActivity::class.java))
+        }
+
+        mTvLogin.setOnClickListener {
+            startActivity(Intent(mContext, LoginActivity::class.java))
         }
     }
 

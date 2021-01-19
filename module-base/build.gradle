@@ -47,6 +47,7 @@ kapt {
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/commons-lang-2.6.jar')
     kapt dependenciesConfig.alibabaArouterCompiler
     api dependenciesConfig.alibababArouter
     api dependenciesConfig.kotlin
@@ -66,4 +67,6 @@ dependencies {
     api dependenciesConfig.eventbus
     api dependenciesConfig.gson
     api dependenciesConfig.toast
+    api dependenciesConfig.recyclerViewAdapter
+    api dependenciesConfig.glide
 }

@@ -5,6 +5,8 @@
     <string name="biz_today_label_today">今日</string>
     <string name="biz_today_label_test">Test</string>
     <string name="biz_today_label_today_details">今日详情</string>
+    <string name="biz_today_label_banner">Banner 网络请求展示（GET）</string>
+    <string name="biz_today_label_login">登录 网络请求展示（POST）</string>
 
     <!-- Xml CopyWriter -->
     <string name="biz_today_text_city">城市</string>
@@ -13,5 +15,13 @@
     <string name="biz_today_text_update_today_red_dot">更新「今日」组件红点提示</string>
     <string name="biz_today_text_test">测试页面</string>
     <string name="biz_today_text_today_details">今日详情</string>
+    <string name="biz_today_text_banner_list">Banner 网络请求展示（GET）</string>
+    <string name="biz_today_text_login">登录 网络请求 参数传递 展示（POST）</string>
+    <string name="biz_today_text_login_1">登录1（POST）参数 传参</string>
+    <string name="biz_today_text_login_2">登录2（POST）Map 传参</string>
+    <string name="biz_today_text_login_3">登录3（POST）模型 传参</string>
+    <string name="biz_today_text_login_description">登录接口服务器接收的是参数类型，所以，只有第1种和第2种可以调通，
+        两种不同的写法，Map传参适用于参数多的情况。\n第三种方式仅作"模型"传参写法展示，实际项目开发中，有很多接口，服务器接收参数的方式是"模型"。</string>
+
 
 </resources>
