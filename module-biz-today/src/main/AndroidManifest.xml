@@ -12,6 +12,14 @@
             android:name=".details.TodayDetailsActivity"
             android:label="@string/biz_today_label_today_details"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".banner.activity.BannerListActivity"
+            android:label="@string/biz_today_label_banner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.activity.LoginActivity"
+            android:label="@string/biz_today_label_login"
+            android:screenOrientation="portrait" />
 
     </application>
 

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.hjq.toast.ToastUtils
 
 import com.xingzhi.android.base.android.BaseFragment
 
@@ -76,6 +77,10 @@ abstract class BizFragment : BaseFragment(), IBizView {
     override fun onDestroyView() {
         (mContentView.parent as ViewGroup).removeView(mContentView)
         super.onDestroyView()
+    }
+
+    fun showToast(msg: String?) {
+        ToastUtils.show(msg)
     }
 
     override fun onDetach() {

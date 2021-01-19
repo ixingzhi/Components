@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import com.hjq.toast.ToastUtils
 import com.xingzhi.android.base.android.BaseActivity
 
 /**
@@ -22,6 +23,10 @@ abstract class BizActivity : BaseActivity(), IBizView {
         initView(savedInstanceState, mContentView)
         initEvent()
         initData()
+    }
+
+    fun showToast(msg: String?) {
+        ToastUtils.show(msg)
     }
 
     override fun onDestroy() {
