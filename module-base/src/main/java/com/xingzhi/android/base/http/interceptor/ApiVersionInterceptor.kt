@@ -11,16 +11,6 @@ import java.io.IOException
  */
 class ApiVersionInterceptor : Interceptor {
 
-    companion object {
-        @JvmStatic
-        val instance: ApiVersionInterceptor
-            get() = ApiVersionInterceptorHelper.sInstance
-    }
-
-    private object ApiVersionInterceptorHelper {
-        val sInstance = ApiVersionInterceptor()
-    }
-
     private val versionName = AppUtils.getAppVersionName(BizApplication.context)
     private var token = ""
 

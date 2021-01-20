@@ -24,14 +24,6 @@ class BannerApiService private constructor(private val api: BannerApi) : BaseApi
             }
             return instance as BannerApiService
         }
-
-        @Synchronized
-        fun getInstance(context: Context, url: String): BannerApiService {
-            return BannerApiService(
-                ComponentsClient.getInstance(context, url).client.create(BannerApi::class.java)
-            )
-        }
-
     }
 
     fun getBannerList(): Observable<List<Banner>> {

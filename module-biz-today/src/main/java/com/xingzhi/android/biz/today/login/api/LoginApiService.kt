@@ -4,7 +4,6 @@ import android.content.Context
 import com.xingzhi.android.base.http.ComponentsClient
 import com.xingzhi.android.base.http.api.BaseApiService
 import com.xingzhi.android.base.http.resp.Response
-import com.xingzhi.android.biz.today.banner.model.Banner
 import com.xingzhi.android.biz.today.login.model.Login
 import com.xingzhi.android.biz.today.login.model.User
 import io.reactivex.Observable
@@ -33,7 +32,6 @@ class LoginApiService private constructor(private val api: LoginApi) : BaseApiSe
                 ComponentsClient.getInstance(context, url).client.create(LoginApi::class.java)
             )
         }
-
     }
 
     fun login1(username: String, password: String): Observable<User> {
