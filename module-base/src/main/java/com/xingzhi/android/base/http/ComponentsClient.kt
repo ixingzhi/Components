@@ -2,17 +2,12 @@ package com.xingzhi.android.base.http
 
 import android.content.Context
 import com.xingzhi.android.BuildConfig
-import com.xingzhi.android.base.http.interceptor.ApiVersionInterceptor.Companion.instance
-import com.xingzhi.android.base.http.interceptor.DynamicTimeoutInterceptor
-import com.xingzhi.android.base.http.interceptor.HttpExceptionInterceptor
-import com.xingzhi.android.base.http.interceptor.HttpLoggingInterceptor
-import com.xingzhi.android.base.http.interceptor.UserAgentInterceptor
+import com.xingzhi.android.base.http.interceptor.*
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.*
-import java.util.concurrent.TimeUnit
 
 /**
  * Created by xiedongdong on 2020/01/18
@@ -25,30 +20,25 @@ class ComponentsClient {
         /*
         * img base url
         */
-        @JvmField
         var BASE_IMG_URL = ""
 
         /*
         * img web url
         */
-        @JvmField
         var BASE_WEB_URL = ""
 
         /*
         * api base url
         */
-        @JvmField
-        var BASE_API_URL = "https://www.wanandroid.com"
+        var BASE_API_URL = "https://www.wanandroid.com/"
 
         private val CLIENT_MAP: MutableMap<String, ComponentsClient> = HashMap()
 
-        @JvmStatic
         @Synchronized
         fun getInstance(context: Context): ComponentsClient {
             return getInstance(context, BASE_API_URL)
         }
 
-        @JvmStatic
         @Synchronized
         fun getInstance(context: Context, baseUrl: String): ComponentsClient {
             var client = CLIENT_MAP[baseUrl]
@@ -58,11 +48,8 @@ class ComponentsClient {
                 val clientBuilder =
                     OkHttpClient.Builder()
                         //.cookieJar(new CookieJar(PersistentCookieStore.getInstance(context)))
-                        .connectTimeout(20, TimeUnit.SECONDS)
-                        .readTimeout(20, TimeUnit.SECONDS)
-                        .writeTimeout(20, TimeUnit.SECONDS)
                         .addInterceptor(DynamicTimeoutInterceptor())
-                        .addInterceptor(instance)
+                        .addInterceptor(ApiVersionInterceptor())
                         .addInterceptor(HttpExceptionInterceptor())
                         .addInterceptor(UserAgentInterceptor(context))
 

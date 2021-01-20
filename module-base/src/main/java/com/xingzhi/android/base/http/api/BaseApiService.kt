@@ -43,7 +43,7 @@ open class BaseApiService {
     }
 
     /**
-     * Response 数据类型解析方式
+     * Response2 数据类型解析方式
      */
     protected fun <T> convert2(resp: Response2<T>): Observable<T> {
         return Observable.create { subscriber: ObservableEmitter<T> ->

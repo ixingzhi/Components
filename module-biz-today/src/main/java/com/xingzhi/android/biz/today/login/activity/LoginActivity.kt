@@ -66,23 +66,17 @@ class LoginActivity : BizActivity() {
      * Map 参数传递
      */
     private fun login2() {
-        val params = HashMap<String, Any>(2)
+        val params = HashMap<String, Any>(4)
         params["username"] = "admin"
         params["password"] = "123456"
+        params["xxx"] = "xxx"
+        params["xxx"] = "xxx"
 
         LoginApiService.getInstance(mContext).login2(params)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .compose(this.bindUntilEvent(ActivityEvent.DESTROY))
-            .subscribe(object : RespHandler<User>() {
-
-                override fun onSuccess(data: User) {}
-
-                override fun onFailure(e: RespException) {
-                    showToast(e.message)
-                }
-
-            })
+            .subscribe(object : RespHandler<User>() {})
     }
 
     /**

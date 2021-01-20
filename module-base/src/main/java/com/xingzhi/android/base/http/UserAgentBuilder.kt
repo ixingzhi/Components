@@ -10,7 +10,7 @@ import org.apache.commons.lang.StringUtils
  */
 object UserAgentBuilder {
 
-    private const val USER_AGENT_FORMAT = "foowwAgent/1.0 Android/{platform_version} {code_name}/{app_version} {channel}/0 {brand}/{phone_model} frontend/1.0 api/1.0"
+    private const val USER_AGENT_FORMAT = "componentsAgent/1.0 Android/{platform_version} {code_name}/{app_version} {channel}/0 {brand}/{phone_model} frontend/1.0 api/1.0"
 
     fun ua(context: Context): String {
         val platformVersion = safeFormat(Build.VERSION.RELEASE)
