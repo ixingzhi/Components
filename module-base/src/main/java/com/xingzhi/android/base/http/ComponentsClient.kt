@@ -23,7 +23,7 @@ class ComponentsClient {
         var BASE_IMG_URL = ""
 
         /*
-        * img web url
+        * web base url
         */
         var BASE_WEB_URL = ""
 
