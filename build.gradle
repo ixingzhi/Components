@@ -24,6 +24,11 @@ allprojects {
         google()
         jcenter()
         maven { url 'https://developer.huawei.com/repo/' }
+
+        maven { url 'https://storage.googleapis.com/download.flutter.io' }
+
+        //url '/Users/xiedongdong/Documents/AndroidStudioProjects/module_components_flutter/build/host/outputs/repo'
+        maven { url 'http://localhost:8081/repository/maven-releases/' }
     }
 }
 
