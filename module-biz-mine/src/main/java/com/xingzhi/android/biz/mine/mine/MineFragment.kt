@@ -6,6 +6,8 @@ import android.view.View
 import com.xingzhi.android.biz.base.BizFragment
 import com.xingzhi.android.biz.mine.R
 import com.xingzhi.android.biz.mine.settings.SettingsActivity
+import com.xingzhi.android.biz.utils.AppUtils
+import com.xingzhi.android.flutter.FlutterRoute
 import kotlinx.android.synthetic.main.biz_mine_fragment_mine.*
 
 /**
@@ -28,6 +30,14 @@ class MineFragment : BizFragment() {
     override fun initEvent() {
         mTvSettings.setOnClickListener {
             startActivity(Intent(mContext, SettingsActivity::class.java))
+        }
+
+        mTvFlutterMain.setOnClickListener {
+            FlutterRoute.main(mContext)
+        }
+
+        mTvFlutterVersion.setOnClickListener {
+            FlutterRoute.versionInfo(mContext, AppUtils.getAppVersionName(context))
         }
     }
 
