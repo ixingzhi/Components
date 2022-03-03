@@ -17,6 +17,8 @@ https://mp.weixin.qq.com/s?__biz=Mzg5ODUyNjM3MQ==&mid=2247483788&idx=1&sn=426fcc
 
 运行此Demo，需要下载运行 https://github.com/ixingzhi/module_components_flutter 组件，生成AAR，在项目中修改访问路径，或者注释掉Flutter相关代码。
 
+分支 no_flutter_version 不包含Flutter代码，可直接运行。
+
 Apk下载体验地址：http://d.zqapps.com/xm6k
 
 
