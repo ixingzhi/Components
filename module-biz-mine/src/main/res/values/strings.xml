@@ -7,7 +7,5 @@
 
     <!-- Xml CopyWriter -->
     <string name="biz_mine_text_settings">设置</string>
-    <string name="biz_mine_text_flutter_main">Flutter Main页面</string>
-    <string name="biz_mine_text_flutter_version">Flutter 版本信息页面</string>
 
 </resources>

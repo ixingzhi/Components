@@ -25,11 +25,6 @@ android {
         debug {
             buildConfigField "boolean", "IS_MODULE", String.valueOf(rootProject.ext.isModule)
         }
-
-        // Flutter profileImplementation
-        profile {
-            initWith debug
-        }
     }
 
     compileOptions {
@@ -74,14 +69,4 @@ dependencies {
     api dependenciesConfig.toast
     api dependenciesConfig.recyclerViewAdapter
     api dependenciesConfig.glide
-
-    // Flutter AAR 本地repo集成
-//    debugImplementation 'com.xingzhi.android.biz.module_components_flutter:flutter_debug:1.0'
-//    profileImplementation 'com.xingzhi.android.biz.module_components_flutter:flutter_profile:1.0'
-//    releaseImplementation 'com.xingzhi.android.biz.module_components_flutter:flutter_release:1.0'
-
-    // Flutter AAR Maven集成
-    debugImplementation "com.xingzhi.android.biz.module_components_flutter:flutter_debug:${FLUTTER_MODULE_VSERION}"
-    profileImplementation "com.xingzhi.android.biz.module_components_flutter:flutter_profile:${FLUTTER_MODULE_VSERION}"
-    releaseImplementation "com.xingzhi.android.biz.module_components_flutter:flutter_release:${FLUTTER_MODULE_VSERION}"
 }
